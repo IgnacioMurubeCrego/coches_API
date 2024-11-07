@@ -56,4 +56,5 @@ const handler = (req: Request): Response => {
 			});
 		}
 	}
+	return new Response(`Request method :${method} not found`, { status: 404 });
 };
